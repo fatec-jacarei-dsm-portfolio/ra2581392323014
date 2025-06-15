@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Edlaine</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+  <!-- Menu fixo -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contatos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Apresentação -->
+  <header id="home">
+    <img src="assets/Foto_edlaine.jpg" alt="Minha Foto" class="profile-img">
+    <h1>Olá, eu sou Edlaine</h1>
+    <p>
+      Sou formada em Design de Interiores pelo IFSP, decidi migrar para a área de tecnologia movida pela paixão por criação digital e soluções inovadoras.
+      Atualmente estudo na FATEC de Jacareí, estou no 3º semestre do curso de Desenvolvimento de Software Multiplataforma, onde adquiri conhecimentos em:
+      <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong> e <strong>React</strong>.
+      O design me proporcionou uma visão para interfaces intuitivas, experiência do usuário (UX) e design responsivo,
+      que agora aplico no desenvolvimento de projetos web.
+      Combinando a base criativa com a lógica de programação, busco construir aplicações funcionais, acessíveis e visualmente atraentes.
+      Meu objetivo é consolidar minha carreira como desenvolvedora, contribuindo com projetos e compartilhando conhecimento com a comunidade tech.
+      Estou sempre em busca de aprendizados novos e pronta para encarar oportunidades que me permitam crescer profissionalmente.
+    </p>
+  </header>
+
+  
+  <!-- Carrossel de projetos -->
+  <main id="projects">
+    <h2>Projetos</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="prevProject()">←</button>
+      <div class="carousel" id="carousel"></div>
+      <button class="carousel-btn right" onclick="nextProject()">→</button>
+    </div>
+  </main>
+
+  <!-- Tecnologias -->
+  <section class="tech">
+    <h2>Tecnologias</h2>
+    <div class="tech-list">
+      <i class="devicon-html5-plain colored" title="HTML5"></i>
+      <i class="devicon-css3-plain colored" title="CSS3"></i>
+      <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+      <i class="devicon-typescript-plain colored" title="TypeScript"></i>
+      <i class="devicon-react-original colored" title="React"></i>
+      <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+      <i class="devicon-git-plain colored" title="Git"></i>
+      <i class="devicon-github-original colored" title="GitHub"></i>
+      <i class="devicon-mongodb-plain colored" title="Mongodb"></i>
+    </div>
+  </section>
+
+
+  <!-- Contato -->
+  <footer id="contact">
+  <h2>Contatos</h2>
+  <div class="socials">
+    <a href="https://github.com/edlaine-souza" target="_blank"> GitHub</a>
+    <a href="https://www.linkedin.com/in/edlaine-souza-509960156/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
