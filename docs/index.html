@@ -10,22 +10,35 @@
 </head>
 
 <body>
-  <!-- Menu fixo -->
+
+  <!-- MENU FIXO COM DROPDOWN -->
   <nav class="navbar">
     <ul>
       <li><a href="#home">Início</a></li>
-      <li><a href="#projects">Projetos</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Projetos ▾</a>
+
+        <!-- MENU QUE APARECE NO HOVER -->
+        <ul class="dropdown-menu">
+          <li><a href="#projects">Projetos Acadêmicos</a></li>
+          <li><a href="#">Projetos Profissionais</a></li>
+          <li><a href="#">Projetos Pessoais</a></li>
+        </ul>
+      </li>
+
       <li><a href="#contact">Contatos</a></li>
     </ul>
   </nav>
 
-  <!-- Apresentação -->
+  <!-- APRESENTAÇÃO -->
   <header id="home">
     <img src="assets/Foto_edlaine.jpg" alt="Minha Foto" class="profile-img">
     <h1>Olá, eu sou Edlaine</h1>
+
     <p>
       Sou formada em Design de Interiores pelo IFSP, decidi migrar para a área de tecnologia movida pela paixão por criação digital e soluções inovadoras.
-      Atualmente estudo na FATEC de Jacareí, estou no 3º semestre do curso de Desenvolvimento de Software Multiplataforma, onde adquiri conhecimentos em:
+      Atualmente estudo na FATEC de Jacareí, estou cursando Desenvolvimento de Software Multiplataforma, onde adquiri conhecimentos em:
       <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong> e <strong>React</strong>.
       O design me proporcionou uma visão para interfaces intuitivas, experiência do usuário (UX) e design responsivo,
       que agora aplico no desenvolvimento de projetos web.
@@ -35,10 +48,10 @@
     </p>
   </header>
 
-  
-  <!-- Carrossel de projetos -->
+  <!-- CARROSSEL -->
   <main id="projects">
-    <h2>Projetos</h2>
+    <h2>Projetos Acadêmicos</h2>
+
     <div class="carousel-container">
       <button class="carousel-btn left" onclick="prevProject()">←</button>
       <div class="carousel" id="carousel"></div>
@@ -46,9 +59,10 @@
     </div>
   </main>
 
-  <!-- Tecnologias -->
+  <!-- TECNOLOGIAS -->
   <section class="tech">
     <h2>Tecnologias</h2>
+
     <div class="tech-list">
       <i class="devicon-html5-plain colored" title="HTML5"></i>
       <i class="devicon-css3-plain colored" title="CSS3"></i>
@@ -58,23 +72,28 @@
       <i class="devicon-nodejs-plain colored" title="Node.js"></i>
       <i class="devicon-git-plain colored" title="Git"></i>
       <i class="devicon-github-original colored" title="GitHub"></i>
-      <i class="devicon-mongodb-plain colored" title="Mongodb"></i>
+      <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+      <i class="devicon-cplusplus-plain colored" title="C++"></i>
+
+      <!-- Supabase -->
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" 
+           alt="Supabase" 
+           title="Supabase"
+           class="tech-icon">
     </div>
   </section>
 
-
-  <!-- Contato -->
+  <!-- CONTATOS -->
   <footer id="contact">
-  <h2>Contatos</h2>
-  <div class="socials">
-    <a href="https://github.com/edlaine-souza" target="_blank"> GitHub</a>
-    <a href="https://www.linkedin.com/in/edlaine-souza-509960156/" target="_blank">LinkedIn</a>
-  </div>
-</footer>
+    <h2>Contatos</h2>
+
+    <div class="socials">
+      <a href="https://github.com/edlaine-souza" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/edlaine-souza-509960156/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
 
   <script src="script.js" defer></script>
 </body>
 
 </html>
-
-

@@ -2,9 +2,17 @@ const projects = [
   {
     title: "Curso Scrum - Plataforma Educacional",
     image: "assets/thecode.png",
-    description: `Esse projeto foi desenvolvido no 1º semestre do curso de Desenvolvimento de Software Multiplataforma (DSM), como uma solução educacional alinhada à metodologia ágil Scrum. O objetivo foi criar uma plataforma simples de curso online para introduzir os conceitos, papéis e etapas do Scrum de forma acessível e didática. A aplicação conta com uma interface web desenvolvida com HTML, CSS, JavaScript e o framework Bootstrap, proporcionando uma navegação responsiva e moderna. Atuei como membro do Dev Team, contribuindo diretamente com a estruturação das páginas e na estilização com CSS, garantindo uma experiência visual coerente com a proposta da plataforma. Um dos destaques do projeto foi o desenvolvimento de uma seção com perguntas e respostas, em que os usuários recebiam um certificado simbólico ao final, com base em sua pontuação no quiz sobre Scrum. Esse projeto foi essencial para aplicar, na prática, os conhecimentos iniciais de front-end e também para vivenciar o trabalho em equipe sob uma abordagem ágil.`,
+    description: `Esse projeto foi desenvolvido no 1º semestre do curso de Desenvolvimento de Software Multiplataforma (DSM), como 
+    uma solução educacional alinhada à metodologia ágil Scrum. O objetivo foi criar uma plataforma simples de curso online para 
+    introduzir os conceitos, papéis e etapas do Scrum de forma acessível e didática. A aplicação conta com uma 
+    interface web desenvolvida com HTML, CSS, JavaScript e o framework Bootstrap, proporcionando uma navegação 
+    responsiva e moderna. Atuei como membro do Dev Team, contribuindo diretamente com a estruturação das páginas e na estilização com CSS, garantindo 
+    uma experiência visual coerente com a proposta da plataforma. Um dos destaques do projeto foi o desenvolvimento de uma seção com 
+    perguntas e respostas, em que os usuários recebiam um certificado simbólico ao final, com base em sua pontuação no quiz sobre Scrum. Esse projeto 
+    foi essencial para aplicar, na prática, os conhecimentos iniciais de front-end e também para vivenciar o trabalho em equipe sob uma abordagem ágil.`,
     link: "https://github.com/Team-The-Code/API-1DSM-2023"
   },
+  
   {
     title: "Nutri Wise - Sistema de Controle de Nutrientes",
     image: "assets/nutriwise.png",
@@ -15,6 +23,7 @@ A aplicação foi construída com as tecnologias React, Vite, TypeScript, HTML e
 Esse projeto foi fundamental para aprofundar meus conhecimentos em desenvolvimento full stack com foco em boas práticas, componentização e colaboração em equipe utilizando ferramentas e frameworks modernos.`,
     link: "https://github.com/WiseBuilders/Nutri-Wise"
   },
+  
   {
     title: "Zen Tech - Plataforma Meteorológica",
     image: "assets/Zentech.png",
@@ -24,7 +33,29 @@ A aplicação foi construída com React, CSS e MongoDB. Os dados meteorológicos
 
 `,
     link: "https://github.com/Viniciusfernandes2/Zen-Tech-Documentacao"
-  }
+  },
+  
+  {
+  title: "Bio-Alert – Sistema de Detecção de Quedas",
+  image: "assets/bioalert.png",
+  description: `
+  O Bio-Alert é um sistema desenvolvido no 4º semestre do curso de Desenvolvimento de Software Multiplataforma (DSM), 
+  com foco na detecção automática de quedas em idosos. O projeto foi idealizado para aumentar a segurança de pessoas 
+  da terceira idade que vivem sozinhas, reduzindo o tempo de resposta em emergências.
+
+  A solução utiliza sensores inteligentes embarcados que monitora continuamente os movimentos do usuário. Quando o acelerômetro 
+  identifica um padrão compatível com queda, o dispositivo aciona um fluxo automático de comunicação, enviando os dados via Wi-Fi para um aplicativo 
+  mobile. Além disso, o sistema dispara alertas para um número previamente cadastrado.
+
+  No desenvolvimento da solução, foi utilizado um conjunto de tecnologias modernas, incluindo React Native, 
+  TypeScript, Node.js, C++, e o serviço em nuvem Supabase para autenticação e gerenciamento de dados. Também foi construído um protótipo físico 
+  utilizando ESP32, acelerômetro, display e jumpers, permitindo a validação prática do sistema.
+  Atuei como Product Owner (PO), contribuindo na organização do backlog, documentação, GitHub e nos testes de funcionamento do sistema.
+  `,
+  link: "https://github.com/Viniciusfernandes2/Zen-Tech-ABP4"
+}
+
+
 ];
 
 let currentIndex = 0;
