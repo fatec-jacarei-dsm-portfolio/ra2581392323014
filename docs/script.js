@@ -53,6 +53,28 @@ A aplicação foi construída com React, CSS e MongoDB. Os dados meteorológicos
   Atuei como Product Owner (PO), contribuindo na organização do backlog, documentação, GitHub e nos testes de funcionamento do sistema.
   `,
   link: "https://github.com/Viniciusfernandes2/Zen-Tech-ABP4"
+},
+
+{
+  title: "Soccer Inspector – Sistema Inteligente de Análise de Desempenho",
+  image: "assets/soccer.png",
+  description: `
+  O Soccer Inspector foi desenvolvido no 5º semestre do curso de Desenvolvimento de Software Multiplataforma (DSM),
+  com o objetivo de criar uma plataforma para análise de desempenho de atletas de futebol, utilizando dashboards,
+  análise de dados e Inteligência Artificial.
+
+  A solução permite analisar indicadores físicos, dados históricos de partidas, perfis de atletas e possíveis quedas
+  de desempenho. O projeto conta com dashboard web, aplicativo mobile, API backend, banco de dados PostgreSQL e
+  módulo de Inteligência Artificial.
+
+  Foram utilizadas tecnologias como React, TypeScript, Vite, TailwindCSS, Node.js, Express, PostgreSQL, Python,
+  TensorFlow, Flutter e Dart, além de Git, GitHub e Figma.
+
+  Atuei principalmente no desenvolvimento do front-end, contribuindo com as interfaces e funcionalidades da aplicação.
+  Também participei de algumas atividades do back-end e do desenvolvimento mobile utilizando Flutter e Dart,
+  ampliando minha experiência com desenvolvimento multiplataforma.
+  `,
+  link: "https://github.com/HighTechDSM/ABP_5_DSM"
 }
 
 
