@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Edlaine</title>
+  <title>Edlaine Souza — Portfólio</title>
+  <meta name="description" content="Portfólio de Edlaine Souza — de Design de Interiores ao Desenvolvimento de Software. Projetos acadêmicos em React, TypeScript, Node.js e mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
@@ -13,84 +17,135 @@
 
   <!-- MENU FIXO COM DROPDOWN -->
   <nav class="navbar">
-    <ul>
-      <li><a href="#home">Início</a></li>
+    <div class="navbar-inner">
+      <a href="#home" class="brand">Edlaine<span>.</span></a>
+      <ul>
+        <li><a href="#home">Início</a></li>
 
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Projetos ▾</a>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Projetos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#projects">Projetos Acadêmicos</a></li>
+            <li><a href="#">Projetos Profissionais</a></li>
+            <li><a href="#">Projetos Pessoais</a></li>
+          </ul>
+        </li>
 
-        <!-- MENU QUE APARECE NO HOVER -->
-        <ul class="dropdown-menu">
-          <li><a href="#projects">Projetos Acadêmicos</a></li>
-          <li><a href="#">Projetos Profissionais</a></li>
-          <li><a href="#">Projetos Pessoais</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#contact">Contatos</a></li>
-    </ul>
+        <li><a href="#contact">Contatos</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- APRESENTAÇÃO -->
   <header id="home">
-    <img src="assets/Foto_edlaine.jpg" alt="Minha Foto" class="profile-img">
-    <h1>Olá, eu sou Edlaine</h1>
+    <div class="hero">
+      <figure class="hero-photo">
+        <img src="assets/Foto_edlaine.jpg" alt="Foto de Edlaine" class="profile-img">
+      <figcaption>
+  <span class="path">
+    <span class="path-item">
+      <svg class="path-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 20v-6a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6" />
+        <path d="M4 20h16" />
+        <path d="M6 14V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6" />
+      </svg>
+      Design de Interiores
+    </span>
+    <span class="path-item">
+      <svg class="path-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="8 6 3 12 8 18" />
+        <polyline points="16 6 21 12 16 18" />
+      </svg>
+      Desenvolvimento de Software Multiplataforma
+    </span>
+  </span>
+</figcaption>
+      </figure>
 
-    <p>
-      Sou formada em Design de Interiores pelo IFSP, decidi migrar para a área de tecnologia movida pela paixão por criação digital e soluções inovadoras.
-      Atualmente estudo na FATEC de Jacareí. Estou cursando Desenvolvimento de Software Multiplataforma, onde adquiri conhecimentos em:
-      <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong> e <strong>React</strong>.
-      O design me proporcionou uma visão para interfaces intuitivas, experiência do usuário (UX) e design responsivo,
-      que agora aplico no desenvolvimento de projetos web.
-      Combinando a base criativa com a lógica de programação, busco construir aplicações funcionais, acessíveis e visualmente atraentes.
-      Meu objetivo é consolidar minha carreira como desenvolvedora, contribuindo com projetos e compartilhando conhecimento com a comunidade tech.
-      Estou sempre em busca de aprendizados novos e pronta para encarar oportunidades que me permitam crescer profissionalmente.
-    </p>
+      <div class="hero-text">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1>Edlaine Souza</h1>
+        <p>
+          Sou formada em Design de Interiores pelo IFSP e decidi migrar para a área de tecnologia, movida pela
+          paixão por criação digital e soluções inovadoras. Atualmente curso Desenvolvimento de Software
+          Multiplataforma na FATEC de Jacareí, onde venho construindo habilidades em programação, desenvolvimento web e mobile, além de metodologias ágeis e boas práticas de desenvolvimento.
+          
+        </p>
+        <p>
+          O design me deu um olhar apurado para interfaces intuitivas, experiência do usuário e composição
+          responsiva — algo que hoje aplico diretamente no desenvolvimento de produtos web. Combinando essa base
+          criativa com lógica de programação, busco construir aplicações funcionais, acessíveis e visualmente
+          cuidadas, e estou sempre em busca de novos aprendizados e oportunidades para crescer como desenvolvedora.
+        </p>
+      </div>
+    </div>
   </header>
 
   <!-- CARROSSEL -->
   <main id="projects">
-    <h2>Projetos Acadêmicos</h2>
+    <div class="section-head">
+      <h2>Projetos Acadêmicos</h2>
+      <p>Trabalhos desenvolvidos ao longo dos semestres do curso de DSM, na FATEC Jacareí.</p>
+    </div>
 
     <div class="carousel-container">
-      <button class="carousel-btn left" onclick="prevProject()">←</button>
+      <button class="carousel-btn left" onclick="prevProject()" aria-label="Projeto anterior">‹</button>
       <div class="carousel" id="carousel"></div>
-      <button class="carousel-btn right" onclick="nextProject()">→</button>
+      <button class="carousel-btn right" onclick="nextProject()" aria-label="Próximo projeto">›</button>
     </div>
+
+    <div class="carousel-dots" id="carousel-dots"></div>
   </main>
 
   <!-- TECNOLOGIAS -->
   <section class="tech">
-    <h2>Tecnologias</h2>
+    <div class="section-head">
+      <h2>Tecnologias</h2>
+      <p>Ferramentas e linguagens que utilizo no dia a dia dos projetos.</p>
+    </div>
 
     <div class="tech-list">
-      <i class="devicon-html5-plain colored" title="HTML5"></i>
-      <i class="devicon-css3-plain colored" title="CSS3"></i>
-      <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-      <i class="devicon-typescript-plain colored" title="TypeScript"></i>
-      <i class="devicon-react-original colored" title="React"></i>
-      <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-      <i class="devicon-git-plain colored" title="Git"></i>
-      <i class="devicon-github-original colored" title="GitHub"></i>
-      <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-      <i class="devicon-cplusplus-plain colored" title="C++"></i>
-
-      <!-- Supabase -->
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" 
-           alt="Supabase" 
-           title="Supabase"
-           class="tech-icon">
-    </div>
+  <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+  <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+  <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+  <div class="tech-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+  <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+  <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+  <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+  <div class="tech-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+  <div class="tech-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+  <div class="tech-item"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+  <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+  <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+  <div class="tech-item"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+  <div class="tech-item">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" alt="" class="tech-icon">
+    <span>Supabase</span>
+  </div>
+</div>
   </section>
 
   <!-- CONTATOS -->
   <footer id="contact">
-    <h2>Contatos</h2>
+    <h2>Vamos conversar?</h2>
+    <p>Estou aberta a oportunidades, projetos e trocas.</p>
 
     <div class="socials">
-      <a href="https://github.com/edlaine-souza" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/edlaine-souza-509960156/" target="_blank">LinkedIn</a>
-    </div>
+  <a href="https://github.com/edlaine-souza" target="_blank" rel="noopener noreferrer">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/>
+    </svg>
+    GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/edlaine-souza-509960156/" target="_blank" rel="noopener noreferrer">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.48V23H.24V8.25ZM8.24 8.25h4.3v2.01h.06c.6-1.13 2.06-2.33 4.24-2.33 4.54 0 5.38 2.99 5.38 6.87V23h-4.48v-6.44c0-1.54-.03-3.51-2.14-3.51-2.15 0-2.48 1.68-2.48 3.4V23H8.24V8.25Z"/>
+    </svg>
+    LinkedIn
+  </a>
+</div>
+
+    <p class="footnote">Feito por Edlaine Souza</p>
   </footer>
 
   <script src="script.js" defer></script>
