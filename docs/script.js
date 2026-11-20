@@ -75,6 +75,18 @@ A aplicação foi construída com React, CSS e MongoDB. Os dados meteorológicos
   ampliando minha experiência com desenvolvimento multiplataforma.`,
     link: "https://github.com/HighTechDSM/ABP_5_DSM",
     stack: "React, TypeScript, Node.js, PostgreSQL, Python, Flutter"
+  },
+
+  {
+    title: "Chatbot PROCON - Atendimento ao Consumidor",
+    image: "assets/procon-logo.png",
+    description: `O Chatbot PROCON é uma solução de atendimento e orientação ao consumidor, desenvolvida no 6º semestre do curso de Desenvolvimento de Software Multiplataforma (DSM), com o objetivo de facilitar o acesso às informações e aos serviços do PROCON. A proposta consiste em disponibilizar um chatbot integrado ao WhatsApp, capaz de receber mensagens, identificar a necessidade do consumidor, conduzir fluxos de atendimento e apresentar orientações fundamentadas em informações oficiais.
+
+  Além disso, quando a situação não pode ser resolvida por meio da orientação automatizada, o sistema permite o encaminhamento para atendimento presencial, incluindo a consulta de disponibilidade, o agendamento e a indicação dos documentos necessários. O projeto também contempla uma interface administrativa destinada aos funcionários do PROCON, permitindo a consulta de agendamentos e o acesso às informações relevantes dos atendimentos.
+
+  Atuei como integrante do Dev Team com foco Full Stack. Na parte web, desenvolvi a interface administrativa (front-end) onde os funcionários visualizam e gerenciam os agendamentos. No back-end, fui responsável pela ligação com o banco de dados, pela integração e comunicação com a API do WhatsApp, além de implementar a lógica de alertas e o envio da lista de documentos necessários após a confirmação do agendamento.`,
+    link: "https://github.com/HighTechDSM/ABP_6_DSM",
+     stack: "React, TypeScript, Vite, Node.js, Express, FastAPI, Python, PostgreSQL, Supabase, Vitest, Docker, GitHub Actions, Vercel, Render"
   }
 ];
 
