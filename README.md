@@ -10,4 +10,4 @@
 
 🎤 [Pitch de Apresentação (1ºvídeo)](https://youtu.be/K3d4WzGJZ9Y)
 
-🎤 [Pitch de Apresentação (1ºvídeo)](https://youtu.be/uhjL8potbco)
+🎤 [Pitch de Apresentação (2ºvídeo)](https://youtu.be/uhjL8potbco)
