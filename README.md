@@ -9,3 +9,5 @@
 🔗 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392323014/)
 
 🎤 [Pitch de Apresentação (1ºvídeo)](https://youtu.be/K3d4WzGJZ9Y)
+
+🎤 [Pitch de Apresentação (1ºvídeo)](https://youtu.be/uhjL8potbco)
