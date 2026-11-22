@@ -5,12 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edlaine Souza — Portfólio</title>
-  <meta name="description"
-    content="Portfólio de Edlaine Souza — de Design de Interiores ao Desenvolvimento de Software. Projetos acadêmicos em React, TypeScript, Node.js e mais." />
-
+  <meta name="description" content="Portfólio de Edlaine Souza — de Design de Interiores ao Desenvolvimento de Software. Projetos acadêmicos em React, TypeScript, Node.js e mais." />
+  
   <!-- Devicon Local -->
   <link rel="stylesheet" href="assets/devicon/devicon.min.css">
-
+  
   <!-- Seu CSS Local -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -23,17 +22,18 @@
       <a href="#home" class="brand">Edlaine<span>.</span></a>
       <ul>
         <li><a href="#home">Início</a></li>
-        <li><a href="#formacao">Formação</a></li>
 
         <li class="dropdown">
           <a href="#" class="dropbtn">Projetos</a>
           <ul class="dropdown-menu">
-            <li><a href="#projects">Projetos Acadêmicos</a></li>
-            <li><a href="#">Projetos Profissionais</a></li>
-            <li><a href="#">Projetos Pessoais</a></li>
+            <!-- Agora os links chamam a função filterProjects -->
+            <li><a href="#projects" onclick="filterProjects('academic')">Projetos Acadêmicos</a></li>
+            <li><a href="#projects" onclick="filterProjects('professional')">Projetos Profissionais</a></li>
+            <li><a href="#projects" onclick="filterProjects('personal')">Projetos Pessoais</a></li>
           </ul>
         </li>
 
+        <li><a href="#formacao">Formação</a></li>
         <li><a href="#contact">Contatos</a></li>
       </ul>
     </div>
@@ -44,27 +44,25 @@
     <div class="hero">
       <figure class="hero-photo">
         <img src="assets/Foto_edlaine.jpg" alt="Foto de Edlaine" class="profile-img">
-        <figcaption>
-          <span class="path">
-            <span class="path-item">
-              <svg class="path-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 20v-6a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6" />
-                <path d="M4 20h16" />
-                <path d="M6 14V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6" />
-              </svg>
-              Design de Interiores
-            </span>
-            <span class="path-item">
-              <svg class="path-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="8 6 3 12 8 18" />
-                <polyline points="16 6 21 12 16 18" />
-              </svg>
-              Desenvolvimento de Software Multiplataforma
-            </span>
-          </span>
-        </figcaption>
+      <figcaption>
+  <span class="path">
+    <span class="path-item">
+      <svg class="path-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 20v-6a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6" />
+        <path d="M4 20h16" />
+        <path d="M6 14V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6" />
+      </svg>
+      Design de Interiores
+    </span>
+    <span class="path-item">
+      <svg class="path-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="8 6 3 12 8 18" />
+        <polyline points="16 6 21 12 16 18" />
+      </svg>
+      Desenvolvimento de Software Multiplataforma
+    </span>
+  </span>
+</figcaption>
       </figure>
 
       <div class="hero-text">
@@ -72,19 +70,19 @@
         <h1>Edlaine Souza</h1>
         <p>
           Sou formada em Design de Interiores e decidi migrar para a área de tecnologia, movida pela
-          paixão por criação digital e soluções inovadoras. Venho construindo uma base sólida em programação,
+          paixão por criação digital e soluções inovadoras. Venho construindo uma base sólida em programação, 
           desenvolvimento web e mobile, além de metodologias ágeis e boas práticas de desenvolvimento.
         </p>
         <p>
-          Atualmente, estou realizando um estágio na área de desenvolvimento na Prefeitura de Jacareí. Essa
-          experiência tem sido fundamental para vivenciar na prática tudo o que aprendo na faculdade. Tenho
-          gostado muito do dia a dia do desenvolvimento e busco constantemente aprimorar minhas habilidades,
+          Atualmente, estou realizando um estágio na área de desenvolvimento na Prefeitura de Jacareí. Essa 
+          experiência tem sido fundamental para vivenciar na prática tudo o que aprendo na faculdade. Tenho 
+          gostado muito do dia a dia do desenvolvimento e busco constantemente aprimorar minhas habilidades, 
           entregando soluções reais e entendendo de perto como a tecnologia impacta a vida das pessoas.
         </p>
         <p>
           O design me deu um olhar apurado para interfaces intuitivas, experiência do usuário e composição
           responsiva — algo que hoje aplico diretamente no desenvolvimento de produtos web. Combinando essa base
-          criativa com lógica de programação e a vivência do estágio, busco construir aplicações funcionais,
+          criativa com lógica de programação e a vivência do estágio, busco construir aplicações funcionais, 
           acessíveis e visualmente cuidadas, sempre em busca de novos aprendizados.
         </p>
       </div>
@@ -93,32 +91,30 @@
 
   <!-- FORMAÇÃO -->
   <section id="formacao" class="tech" style="padding-top: 3rem; padding-bottom: 3rem;">
-
-    <!-- Título à esquerda -->
     <div class="section-head">
       <h2>Formação Acadêmica</h2>
       <p>Minha trajetória acadêmica e transição de carreira.</p>
     </div>
-
-    <!-- Caixa branca centralizada e com textos no centro -->
+    
     <div class="formacao-box">
-
       <div class="formacao-item">
         <h3>Desenvolvimento de Software Multiplataforma</h3>
         <p>FATEC Jacareí — Ingresso: 1º Semestre de 2023 (Em andamento)</p>
       </div>
-
+      
       <div class="formacao-item">
         <h3>Design de Interiores</h3>
         <p>IFSP — Concluído</p>
       </div>
-
     </div>
   </section>
+
+  <!-- CARROSSEL / PROJETOS -->
   <main id="projects">
     <div class="section-head">
-      <h2>Projetos Acadêmicos</h2>
-      <p>Trabalhos desenvolvidos ao longo dos semestres do curso de DSM, na FATEC Jacareí.</p>
+      <h2>Projetos</h2>
+      <!-- Adicionado ID para o texto mudar dependendo da categoria -->
+      <p id="projects-subtitle">Confira meus projetos acadêmicos, profissionais e pessoais.</p>
     </div>
 
     <div class="carousel-container">
@@ -151,17 +147,15 @@
       <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
       <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
       <div class="tech-item"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
-      <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-      <div class="tech-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+      <div class="tech-item"><img src="assets/supabase.svg" alt="Supabase" class="tech-icon"><span>Supabase</span></div>
+      
+      <!-- Novas tecnologias adicionadas -->
       <div class="tech-item"><i class="devicon-vitejs-plain colored"></i><span>Vite</span></div>
       <div class="tech-item"><i class="devicon-express-original"></i><span>Express</span></div>
       <div class="tech-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
       <div class="tech-item"><i class="devicon-vitest-plain colored"></i><span>Vitest</span></div>
       <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-      <div class="tech-item">
-        <img src="assets/supabase.svg" alt="Supabase" class="tech-icon">
-        <span>Supabase</span>
-      </div>
+      <div class="tech-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
     </div>
   </section>
 
@@ -173,15 +167,13 @@
     <div class="socials">
       <a href="https://github.com/edlaine-souza" target="_blank" rel="noopener noreferrer">
         <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path
-            d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z" />
+          <path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/>
         </svg>
         GitHub
       </a>
       <a href="https://www.linkedin.com/in/edlaine-souza-509960156/" target="_blank" rel="noopener noreferrer">
         <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path
-            d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.48V23H.24V8.25ZM8.24 8.25h4.3v2.01h.06c.6-1.13 2.06-2.33 4.24-2.33 4.54 0 5.38 2.99 5.38 6.87V23h-4.48v-6.44c0-1.54-.03-3.51-2.14-3.51-2.15 0-2.48 1.68-2.48 3.4V23H8.24V8.25Z" />
+          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.48V23H.24V8.25ZM8.24 8.25h4.3v2.01h.06c.6-1.13 2.06-2.33 4.24-2.33 4.54 0 5.38 2.99 5.38 6.87V23h-4.48v-6.44c0-1.54-.03-3.51-2.14-3.51-2.15 0-2.48 1.68-2.48 3.4V23H8.24V8.25Z"/>
         </svg>
         LinkedIn
       </a>

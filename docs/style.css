@@ -398,36 +398,39 @@ main#projects {
 /* =========================================================
    BOTÃO DO REPOSITÓRIO (TEXTO ADAPTÁVEL)
    ========================================================= */
+/* =========================================================
+   BOTÃO DO REPOSITÓRIO (COR FIXA PARA O FUNDO BRANCO)
+   ========================================================= */
 .carousel-card a.repo-link {
-  display: inline-block;
-  margin-top: 0.4rem;
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.8rem;
+  color: var(--accent); /* Azul para destacar no fundo branco */
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.92rem;
-  border-bottom: 1px solid #ffffff;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
   transition: color 0.2s, border-color 0.2s;
 }
 
 .carousel-card a.repo-link:hover,
 .carousel-card a.repo-link:focus-visible {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--ink); /* Fica preto escuro ao passar o mouse */
+  border-color: var(--ink);
 }
 
 .repo-icon {
-  width: 16px;
-  height: 16px;
-  vertical-align: -3px;
-  margin-right: 0.35rem;
-  fill: #ffffff;
+  width: 18px;
+  height: 18px;
+  margin-right: 0.4rem;
+  fill: var(--accent); /* Ícone azul */
   transition: fill 0.2s;
 }
 
 .carousel-card a.repo-link:hover .repo-icon,
 .carousel-card a.repo-link:focus-visible .repo-icon {
-  fill: var(--accent);
+  fill: var(--ink); /* Ícone fica preto no hover */
 }
 
 /* Botões de navegação */
